@@ -1,0 +1,10 @@
+.location {
+  font-size: 80px;
+  margin-top: 90px;
+  color: rgb(178, 86, 53);
+  white-space: nowrap;
+}
+.date {
+  font-size: 20px;
+  margin-top: -20px;
+}

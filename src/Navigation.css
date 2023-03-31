@@ -1,0 +1,19 @@
+.search-bar {
+  font-family: "Poppins", sans-serif;
+}
+.search-button {
+  background-color: rgb(190 164 153);
+  border: 1px solid black;
+}
+.search-button:hover {
+  background-color: rgb(208, 182, 171);
+  border: 1px solid black;
+}
+.current-button {
+  background-color: rgba(85, 133, 100, 0.5);
+  border: 1px solid black;
+}
+.current-button:hover {
+  background-color: rgba(85, 133, 100, 0.7);
+  border: 1px solid black;
+}

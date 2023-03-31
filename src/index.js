@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
+
+import reportWebVitals from "./reportWebVitals";
+import Navigation from "./Navigation";
+import Location from "./Location";
+import Temperature from "./Temperature";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <body>
+      <div className="container">
+        <Navigation />
+        <div className="main-container">
+          <Location /> <Temperature />
+        </div>
+      </div>
+    </body>
   </React.StrictMode>
 );
 
