@@ -27,3 +27,7 @@ code {
   border-radius: 50px;
   padding: 30px 30px;
 }
+
+a {
+  text-align: center;
+}

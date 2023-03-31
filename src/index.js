@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.css";
-import axios from "axios";
+// import axios from "axios";
 
 import reportWebVitals from "./reportWebVitals";
 import Navigation from "./Navigation";
@@ -21,6 +21,13 @@ root.render(
         </div>
       </div>
     </body>
+    <a
+      href="https://github.com/OliviaPopoola/my-react-weather-app"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Open sourced
+    </a>
   </React.StrictMode>
 );
 
