@@ -8,17 +8,7 @@ export default function Temperature() {
         <span className="degrees" id="current-degrees">
           80
         </span>
-        <span>
-          <a href="#" id="celsius-link" className="active c-symbol">
-            °C
-          </a>
-        </span>
-        |
-        <span>
-          <a href="#" id="fahrenheit-link" className="f-symbol">
-            °F
-          </a>
-        </span>
+        <span>°C</span>|<span>°F</span>
       </div>
     </div>
   );
