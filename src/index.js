@@ -21,13 +21,15 @@ root.render(
         </div>
       </div>
     </body>
-    <a
-      href="https://github.com/OliviaPopoola/my-react-weather-app"
-      target="_blank"
-      rel="noreferrer"
-    >
-      Open sourced
-    </a>
+    <footer>
+      <a
+        href="https://github.com/OliviaPopoola/my-react-weather-app"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Open sourced
+      </a>
+    </footer>
   </React.StrictMode>
 );
 
