@@ -2,18 +2,18 @@
   font-family: "Poppins", sans-serif;
 }
 .search-button {
-  background-color: rgb(190 164 153);
+  background-color: rgba(112, 128, 144, 0.4);
   border: 1px solid black;
 }
 .search-button:hover {
-  background-color: rgb(208, 182, 171);
+  background-color: rgb(112, 128, 144);
   border: 1px solid black;
 }
 .current-button {
-  background-color: rgba(85, 133, 100, 0.5);
+  background-color: rgba(112, 128, 144, 0.4);
   border: 1px solid black;
 }
 .current-button:hover {
-  background-color: rgba(85, 133, 100, 0.7);
+  background-color: rgba(112, 128, 144);
   border: 1px solid black;
 }
