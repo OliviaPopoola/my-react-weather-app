@@ -2,34 +2,54 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import axios from "axios";
 
 import reportWebVitals from "./reportWebVitals";
 import Navigation from "./Navigation";
-import Location from "./Location";
-import Temperature from "./Temperature";
+import Weather from "./Weather";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <body>
+    <main>
       <div className="container">
         <Navigation />
-        <div className="main-container">
-          <Location /> <Temperature />
+        <div className="main-container row">
+          <Weather />
         </div>
       </div>
-    </body>
-    <footer>
-      <a
-        href="https://github.com/OliviaPopoola/my-react-weather-app"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Open sourced
-      </a>
-    </footer>
+
+      <footer className="bottom-page">
+        <a
+          href="https://www.linkedin.com/in/olivia-popoola-095op"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/058/original/9026840_linkedin_logo_thin_icon.png?1670861656"
+            alt="linkedin"
+            width="40"
+          />
+        </a>
+        <a href="https://github.com/OliviaPopoola" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/057/original/9026804_github_logo_thin_icon.png?1670861626"
+            alt="github"
+            width="40"
+          />
+        </a>
+        <a href="https://www.instagram.com/livvy.codes/" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/056/original/9026811_instagram_logo_thin_icon.png?1670861619"
+            alt="instagram"
+            width="40"
+          />
+        </a>
+
+        <div class="tagline">made with 💗 by Olivia</div>
+      </footer>
+    </main>
   </React.StrictMode>
 );
 
