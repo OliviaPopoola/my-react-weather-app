@@ -8,13 +8,13 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      city: response.city,
-      description: response.condition.description,
-      temperature: response.temperature.current,
-      wind: response.wind.speed,
-      humidity: response.temperature.humidity,
+      city: response.data.city,
+      description: response.data.condition.description,
+      temperature: response.data.temperature.current,
+      wind: response.data.wind.speed,
+      humidity: response.data.temperature.humidity,
       date: "15th June",
-      icon_url: response.condition.icon_url,
+      icon_url: response.data.condition.icon_url,
     });
   }
 
@@ -22,24 +22,21 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <h1 className="text-capitalize">{weatherData.city}</h1>
-        <ul>
-          <li>{weatherData.date}</li>
-          <li className="text-capitalize">{weatherData.description}</li>
-        </ul>
-        <div className="row">
-          <div className="col-6">
-            <img
-              src={weatherData.icon_url}
-              width="30"
-              alt={weatherData.description}
-            />
-            {Math.round(weatherData.temperature)}
-          </div>
-          <div className="col-6">
+        <div className="container">
+          <div className="row">
             <ul>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind}km/ms</li>
+              <li>{weatherData.date}</li>
+              <li className="text-capitalize">{weatherData.description}</li>
             </ul>
+            <div className="col-6">{Math.round(weatherData.temperature)}°</div>
+
+            <div className="col-6">
+              <ul>
+                <img src={weatherData.icon_url} alt={weatherData.description} />
+                <li>Humidity: {weatherData.humidity}%</li>
+                <li>Wind: {weatherData.wind}km/ms</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

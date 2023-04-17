@@ -13,7 +13,7 @@ export default function Navigation() {
                 type="text"
                 placeholder="Search for a location..."
                 aria-label="Search"
-                autocomplete="off"
+                autoComplete="off"
                 id="search-input"
               />
               <button className="btn search-button" type="submit">

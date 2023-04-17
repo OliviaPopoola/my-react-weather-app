@@ -47,7 +47,7 @@ root.render(
           />
         </a>
 
-        <div class="tagline">made with 💗 by Olivia</div>
+        <div className="tagline">made with 💗 by Olivia</div>
       </footer>
     </main>
   </React.StrictMode>
