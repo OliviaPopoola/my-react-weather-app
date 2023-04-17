@@ -11,7 +11,7 @@ export default function Navigation() {
               <input
                 className="form-control me-2"
                 type="text"
-                placeholder="Location..."
+                placeholder="Search for a location..."
                 aria-label="Search"
                 autocomplete="off"
                 id="search-input"

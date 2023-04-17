@@ -17,7 +17,7 @@ root.render(
       <div className="container">
         <Navigation />
         <div className="main-container row">
-          <Weather />
+          <Weather defaultCity="Berlin" />
         </div>
       </div>
 
