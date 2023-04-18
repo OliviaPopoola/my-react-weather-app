@@ -7,15 +7,14 @@ import "bootstrap/dist/css/bootstrap.css";
 // import axios from "axios";
 
 import reportWebVitals from "./reportWebVitals";
-import Navigation from "./Navigation";
 import Weather from "./Weather";
+import WeatherInfo from "./WeatherInfo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <main>
-      <div className="container">
-        <Navigation />
+      <div className="body-area container">
         <div className="main-container row">
           <Weather defaultCity="Berlin" />
         </div>

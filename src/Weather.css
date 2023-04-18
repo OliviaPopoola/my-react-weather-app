@@ -1,10 +1,19 @@
 h1 {
   color: rgb(105, 204, 209);
   display: block;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 200;
   line-height: 1.5;
-  margin: 20px 0 0 0;
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+h2 {
+  color: rgb(109, 117, 125);
+  display: block;
+  font-weight: 250;
+  line-height: 0;
+  text-align: center;
+  font-size: 20px;
 }
 ul {
   margin: 0;
@@ -12,10 +21,20 @@ ul {
 }
 li {
   color: rgb(109, 117, 125);
-  font-size: 16px;
-  font-weight: 100;
+  font-size: 32px;
+  font-weight: 150;
   line-height: 1.2;
   list-style-type: none;
+}
+.col-4-date {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 2ms ease-in-out;
+  display: flex;
+  justify-content: center;
 }
 
 .location {
@@ -43,4 +62,24 @@ li {
   border-radius: 30%;
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+
+.search-bar {
+  font-family: "Montserrat", sans-serif;
+}
+.search-button {
+  background-color: rgba(112, 128, 144, 0.4);
+  border: 1px solid black;
+}
+.search-button:hover {
+  background-color: rgb(112, 128, 144);
+  border: 1px solid black;
+}
+.current-button {
+  background-color: rgba(112, 128, 144, 0.4);
+  border: 1px solid black;
+}
+.current-button:hover {
+  background-color: rgba(112, 128, 144);
+  border: 1px solid black;
 }
