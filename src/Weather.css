@@ -26,48 +26,17 @@ li {
   line-height: 1.2;
   list-style-type: none;
 }
-.col-4-date {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.weather-box {
   padding: 30px;
-  border-radius: 5px;
-  text-align: center;
-  transition: all 2ms ease-in-out;
   display: flex;
   justify-content: center;
-}
-
-.location {
-  font-size: 80px;
-  margin-top: 90px;
-  color: rgb(178, 86, 53);
-  white-space: nowrap;
-}
-.date {
-  font-size: 20px;
-  margin-top: -20px;
-}
-.current-temperature {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(178, 86, 53);
-  margin-top: 86px;
-  margin-left: 50px;
-}
-.degrees {
-  font-size: 110px;
-}
-.c-symbol,
-.f-symbol {
-  padding: 10px;
-  border-radius: 30%;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
 .search-bar {
   font-family: "Montserrat", sans-serif;
 }
 .search-button {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: rgba(112, 128, 144, 0.4);
   border: 1px solid black;
 }

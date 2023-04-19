@@ -13,14 +13,14 @@ export default function WeatherInfo(props) {
       <div className="container">
         <div className="container">
           <div className="row mt-5">
-            <div className="col-4-date col-4">
+            <div className="weather-box col-4">
               <ul>
                 <li className="tempInfo">
-                  {Math.round(props.data.temperature)}°
+                  {Math.round(props.data.temperature)}°c
                 </li>
               </ul>
             </div>
-            <div className="col-4-date col-4">
+            <div className="weather-box col-4">
               <ul>
                 <div className="d-flex float-middle">
                   <WeatherIcon code={props.data.icon} size={75} />
@@ -29,7 +29,7 @@ export default function WeatherInfo(props) {
               </ul>
             </div>
 
-            <div className="col-4-date col-4">
+            <div className="weather-box col-4">
               <ul>
                 <li>Humidity: {props.data.humidity}%</li>
                 <li>Wind: {Math.round(props.data.wind)} km/ms</li>

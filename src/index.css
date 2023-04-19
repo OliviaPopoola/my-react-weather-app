@@ -5,13 +5,6 @@ main {
   color: rgb(94, 83, 83);
 }
 
-button {
-  margin-right: 14px;
-}
-
-a {
-  text-align: center;
-}
 .body-area {
   background: rgba(246, 246, 247, 0.7);
   border-radius: 50px;
