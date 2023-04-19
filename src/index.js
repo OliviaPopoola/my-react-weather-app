@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import reportWebVitals from "./reportWebVitals";
 import Weather from "./Weather";
-import WeatherInfo from "./WeatherInfo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
