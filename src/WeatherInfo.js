@@ -15,15 +15,14 @@ export default function WeatherInfo(props) {
         <div className="container">
           <div className="row mt-5">
             <div className="weather-box col-4">
-              <div className="tempInfo">
-                <WeatherTemperature celsius={props.data.temperature} />
-              </div>
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
+
             <div className="weather-box col-4">
               <ul>
-                <div className="d-flex float-middle">
+                <li className="d-flex float-middle">
                   <WeatherIcon code={props.data.icon} size={75} />
-                </div>
+                </li>
                 <li className="text-capitalize">{props.data.description}</li>
               </ul>
             </div>

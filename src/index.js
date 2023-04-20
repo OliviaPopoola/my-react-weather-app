@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import reportWebVitals from "./reportWebVitals";
 import Weather from "./Weather";
 
@@ -22,7 +21,6 @@ root.render(
         <a
           href="https://www.linkedin.com/in/olivia-popoola-095op"
           target="_blank"
-          rel="noreferrer"
         >
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/058/original/9026840_linkedin_logo_thin_icon.png?1670861656"
@@ -30,22 +28,14 @@ root.render(
             width="40"
           />
         </a>
-        <a
-          href="https://github.com/OliviaPopoola"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/OliviaPopoola" target="_blank">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/057/original/9026804_github_logo_thin_icon.png?1670861626"
             alt="github"
             width="40"
           />
         </a>
-        <a
-          href="https://www.instagram.com/livvy.codes/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.instagram.com/livvy.codes/" target="_blank">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/056/original/9026811_instagram_logo_thin_icon.png?1670861619"
             alt="instagram"
