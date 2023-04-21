@@ -1,0 +1,19 @@
+.tempInfo {
+  font-size: 70px;
+  color: rgb(109, 117, 125);
+  font-weight: 150;
+  line-height: 1.2;
+}
+.degrees {
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .tempInfo {
+    font-size: 30px;
+  }
+  .degrees {
+    display: block;
+    font-size: 10px;
+  }
+}

@@ -39,6 +39,15 @@ canvas {
   display: flex;
   justify-content: center;
 }
-.tempInfo {
-  font-size: 60px;
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  li {
+    font-size: 18px;
+  }
 }

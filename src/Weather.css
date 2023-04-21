@@ -52,3 +52,8 @@ li {
   background-color: rgba(112, 128, 144);
   border: 1px solid black;
 }
+.loading-page {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -83,6 +84,14 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+
+    return (
+      <div className="loading-page">
+        <div className="loader">
+          <ClipLoader color="#6d757d" loading={true} size={60} />
+        </div>
+        Loading...
+      </div>
+    );
   }
 }
