@@ -3,6 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import ClipLoader from "react-spinners/ClipLoader";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -18,6 +19,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
       icon: response.data.condition.icon,
+      coordinates: response.data.coordinates,
     });
   }
   function handleSubmit(event) {
@@ -67,19 +69,11 @@ export default function Weather(props) {
                   </div>
                 </button>
               </form>
-              <button className="btn current-button" id="current-button">
-                <div className="pin-icon">
-                  <img
-                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/621/original/9026779_map_pin_thin_icon.png?1671038725"
-                    alt="pin-icon"
-                    width="30"
-                  />
-                </div>
-              </button>
             </div>
           </nav>
         </div>
-        <WeatherInfo data={weatherData} />;
+        <WeatherInfo data={weatherData} size={52} />;
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
