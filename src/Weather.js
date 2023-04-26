@@ -72,7 +72,7 @@ export default function Weather(props) {
             </div>
           </nav>
         </div>
-        <WeatherInfo data={weatherData} size={52} />;
+        <WeatherInfo data={weatherData} size={52} />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
