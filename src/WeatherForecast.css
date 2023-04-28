@@ -1,3 +1,6 @@
 .WeatherForecast {
   text-align: center;
 }
+h2 {
+  color: rgb(105, 204, 209);
+}

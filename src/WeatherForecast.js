@@ -16,10 +16,21 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
 
+  function apiLoad() {
+    const apiKey = "64f17b5a3404993ab8co5054f3c7bt29";
+    let lon = props.coordinates.longitude;
+    let lat = props.coordinates.latitude;
+    let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
+
+    axios.get(forecastUrl).then(handleResponse);
+  }
   if (loaded) {
     return (
       <div className="WeatherForecast">
-        <div className="row">
+        {" "}
+        <hr />
+        <h2 className="mt-4 mb-3 text-uppercase">Weather Forecast:</h2>
+        <div className="row mb-3">
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (
@@ -35,12 +46,7 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    const apiKey = "64f17b5a3404993ab8co5054f3c7bt29";
-    let lon = props.coordinates.longitude;
-    let lat = props.coordinates.latitude;
-    let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
-
-    axios.get(forecastUrl).then(handleResponse);
+    apiLoad();
 
     return null;
   }
